@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var HasCalledDoc = false
     var HasTakenMeds = false
 
+    @IBOutlet weak var lblInPain: UILabel!
+
     let URL_SAVE_STEVEC = "http://www.flip3000.com/stevec/save_stevec.php"
 
     override func viewDidLoad() {
@@ -31,8 +33,8 @@ class ViewController: UIViewController {
 //        let reqeustURL = NSMutableURLRequest(URL: url as URL)
     }
     
-    
     @IBAction func btnIsInPain(_ sender: UIButton) {
+//        lblInPain.text = "T"
         IsInPain = true
     }
     

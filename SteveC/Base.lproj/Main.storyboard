@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pain-->
+        <!--vcPain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Pain" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcPain" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Doctor-->
+        <!--vcDoctor-->
         <scene sceneID="ExY-q1-boz">
             <objects>
-                <viewController title="Doctor" modalTransitionStyle="crossDissolve" id="afH-Px-nRe" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcDoctor" modalTransitionStyle="crossDissolve" id="afH-Px-nRe" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFd-LR-Bhw"/>
                         <viewControllerLayoutGuide type="bottom" id="1Wa-5o-TeO"/>
@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="722" y="37"/>
         </scene>
-        <!--Meds-->
+        <!--vcMeds-->
         <scene sceneID="OGh-3t-a9e">
             <objects>
-                <viewController title="Meds" modalTransitionStyle="crossDissolve" id="AJq-1v-tBn" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcMeds" modalTransitionStyle="crossDissolve" id="AJq-1v-tBn" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="evZ-gX-YYJ"/>
                         <viewControllerLayoutGuide type="bottom" id="nUt-hd-Oaj"/>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="1468" y="37"/>
         </scene>
-        <!--View Controller-->
+        <!--vcSendRequest-->
         <scene sceneID="Wf3-3s-eZX">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="Kzq-5s-ZQ2" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcSendRequest" modalTransitionStyle="crossDissolve" id="Kzq-5s-ZQ2" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k1v-sK-yxI"/>
                         <viewControllerLayoutGuide type="bottom" id="e0n-TN-dtO"/>
@@ -226,6 +226,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="lblInPain" destination="G6f-vG-DSg" id="pUB-fu-zfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCI-9e-WI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
