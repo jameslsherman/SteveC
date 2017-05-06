@@ -12,7 +12,7 @@
         <!--Pain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Pain" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Pain" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMd-BC-Dsq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMd-BC-Dsq" userLabel="btnPainNo">
                                 <rect key="frame" x="43" y="385" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,11 +30,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="noClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFE-UA-JNM"/>
                                     <segue destination="afH-Px-nRe" kind="show" id="a5i-Fi-PZh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-6R-DZQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-6R-DZQ" userLabel="btnPainYes">
                                 <rect key="frame" x="43" y="490" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,7 +42,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="yesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xc-9F-0fg"/>
+                                    <action selector="btnIsInPain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmK-ad-JIu"/>
                                     <segue destination="afH-Px-nRe" kind="show" id="hLS-2e-10O"/>
                                 </connections>
                             </button>
@@ -71,7 +70,7 @@
         <!--Doctor-->
         <scene sceneID="ExY-q1-boz">
             <objects>
-                <viewController title="Doctor" id="afH-Px-nRe" sceneMemberID="viewController">
+                <viewController title="Doctor" modalTransitionStyle="crossDissolve" id="afH-Px-nRe" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFd-LR-Bhw"/>
                         <viewControllerLayoutGuide type="bottom" id="1Wa-5o-TeO"/>
@@ -80,7 +79,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-Rb-Tjk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-Rb-Tjk" userLabel="btnDoctorNo">
                                 <rect key="frame" x="43" y="385" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,11 +88,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="noClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XfM-2G-rhq"/>
                                     <segue destination="AJq-1v-tBn" kind="show" id="Qoh-fL-8aX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-3f-Az2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-3f-Az2" userLabel="btnDoctorYes">
                                 <rect key="frame" x="43" y="490" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,7 +100,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="yesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrQ-He-gNJ"/>
+                                    <action selector="btnHasCalledDoc:" destination="afH-Px-nRe" eventType="touchUpInside" id="YQd-NP-bP8"/>
                                     <segue destination="AJq-1v-tBn" kind="show" id="l6B-5o-PB7"/>
                                 </connections>
                             </button>
@@ -127,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="722" y="37"/>
         </scene>
-        <!--Medicine-->
+        <!--Meds-->
         <scene sceneID="OGh-3t-a9e">
             <objects>
-                <viewController title="Medicine" id="AJq-1v-tBn" sceneMemberID="viewController">
+                <viewController title="Meds" modalTransitionStyle="crossDissolve" id="AJq-1v-tBn" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="evZ-gX-YYJ"/>
                         <viewControllerLayoutGuide type="bottom" id="nUt-hd-Oaj"/>
@@ -139,7 +137,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-3j-Yti">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-3j-Yti" userLabel="btnMedsNo">
                                 <rect key="frame" x="43" y="385" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,10 +146,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="noClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iss-IZ-xQj"/>
+                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="0Kk-Mi-uoi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-U8-GJ0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-U8-GJ0" userLabel="btnMedsYes">
                                 <rect key="frame" x="43" y="490" width="289" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,7 +158,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="yesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LGM-Vf-Z6M"/>
+                                    <action selector="btnHasTakenMeds:" destination="AJq-1v-tBn" eventType="touchUpInside" id="3ca-jK-lAD"/>
+                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="9lE-O6-2Yl"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-T3-nQw">
@@ -184,9 +183,58 @@
             </objects>
             <point key="canvasLocation" x="1468" y="37"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Wf3-3s-eZX">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="Kzq-5s-ZQ2" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k1v-sK-yxI"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0n-TN-dtO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mji-Gc-0Yv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Pain: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq6-MJ-T3Q">
+                                <rect key="frame" x="7" y="124" width="360" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Called Doctor: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpI-Bc-CFS">
+                                <rect key="frame" x="7" y="212" width="360" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taken Medicine: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDO-oK-CDw">
+                                <rect key="frame" x="7" y="310" width="360" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T/F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-vG-DSg" userLabel="lblInPain">
+                                <rect key="frame" x="313" y="124" width="46" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCI-9e-WI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2184.8000000000002" y="35.532233883058474"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9lE-O6-2Yl"/>
         <segue reference="l6B-5o-PB7"/>
-        <segue reference="hLS-2e-10O"/>
+        <segue reference="a5i-Fi-PZh"/>
     </inferredMetricsTieBreakers>
 </document>
