@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func noClicked(_ sender: UIButton) {
+        print("You clicked NO")
+    }
 
+    @IBAction func yesClicked(_ sender: UIButton) {
+        print("You clicked YES")
+    }
+    
 }
 
