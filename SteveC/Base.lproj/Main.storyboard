@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Pain" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,6 +49,7 @@
                                 </state>
                                 <connections>
                                     <action selector="yesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xc-9F-0fg"/>
+                                    <segue destination="afH-Px-nRe" kind="show" id="hLS-2e-10O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--View Controller-->
+        <!--Doctor-->
         <scene sceneID="ExY-q1-boz">
             <objects>
-                <viewController id="afH-Px-nRe" sceneMemberID="viewController">
+                <viewController title="Doctor" id="afH-Px-nRe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFd-LR-Bhw"/>
                         <viewControllerLayoutGuide type="bottom" id="1Wa-5o-TeO"/>
@@ -99,6 +100,7 @@
                                 </state>
                                 <connections>
                                     <action selector="yesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrQ-He-gNJ"/>
+                                    <segue destination="AJq-1v-tBn" kind="show" id="l6B-5o-PB7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="722" y="37"/>
         </scene>
-        <!--View Controller-->
+        <!--Medicine-->
         <scene sceneID="OGh-3t-a9e">
             <objects>
-                <viewController id="AJq-1v-tBn" sceneMemberID="viewController">
+                <viewController title="Medicine" id="AJq-1v-tBn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="evZ-gX-YYJ"/>
                         <viewControllerLayoutGuide type="bottom" id="nUt-hd-Oaj"/>
@@ -159,4 +161,8 @@
             <point key="canvasLocation" x="1468" y="37"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="l6B-5o-PB7"/>
+        <segue reference="hLS-2e-10O"/>
+    </inferredMetricsTieBreakers>
 </document>
