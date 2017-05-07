@@ -30,7 +30,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="afH-Px-nRe" kind="show" id="a5i-Fi-PZh"/>
+                                    <segue destination="afH-Px-nRe" kind="show" id="iLJ-bE-xts"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-6R-DZQ" userLabel="btnPainYes">
@@ -42,8 +42,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnIsInPain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmK-ad-JIu"/>
-                                    <segue destination="afH-Px-nRe" kind="show" id="hLS-2e-10O"/>
+                                    <action selector="btnPainYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZT-5N-bOf"/>
+                                    <segue destination="afH-Px-nRe" kind="show" id="fIT-u2-EQe"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Klc-1A-9VK">
@@ -88,7 +88,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AJq-1v-tBn" kind="show" id="Qoh-fL-8aX"/>
+                                    <segue destination="AJq-1v-tBn" kind="show" id="yBu-Oi-YkX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-3f-Az2" userLabel="btnDoctorYes">
@@ -100,8 +100,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnHasCalledDoc:" destination="afH-Px-nRe" eventType="touchUpInside" id="YQd-NP-bP8"/>
-                                    <segue destination="AJq-1v-tBn" kind="show" id="l6B-5o-PB7"/>
+                                    <action selector="btnDoctorYes:" destination="afH-Px-nRe" eventType="touchUpInside" id="1UG-bq-w9m"/>
+                                    <segue destination="AJq-1v-tBn" kind="show" id="ZAN-4A-9LU"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="NIQ-RO-RGY">
@@ -146,7 +146,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="0Kk-Mi-uoi"/>
+                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="Zwg-SB-Vng"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-U8-GJ0" userLabel="btnMedsYes">
@@ -158,8 +158,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnHasTakenMeds:" destination="AJq-1v-tBn" eventType="touchUpInside" id="3ca-jK-lAD"/>
-                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="9lE-O6-2Yl"/>
+                                    <action selector="btnMedsYes2:" destination="AJq-1v-tBn" eventType="touchUpInside" id="6pN-b6-yz7"/>
+                                    <action selector="btnMedsYes:" destination="AJq-1v-tBn" eventType="touchUpInside" id="qFh-v7-PpB"/>
+                                    <segue destination="Kzq-5s-ZQ2" kind="show" id="yoE-aa-6MK"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-T3-nQw">
@@ -223,12 +224,17 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYZ-Of-p8E">
+                                <rect key="frame" x="150" y="458" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="Kzq-5s-ZQ2" eventType="touchUpInside" id="PpT-Fl-26n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="lblInPain" destination="G6f-vG-DSg" id="pUB-fu-zfh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCI-9e-WI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,8 +242,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9lE-O6-2Yl"/>
-        <segue reference="l6B-5o-PB7"/>
-        <segue reference="a5i-Fi-PZh"/>
+        <segue reference="yoE-aa-6MK"/>
+        <segue reference="yBu-Oi-YkX"/>
+        <segue reference="iLJ-bE-xts"/>
     </inferredMetricsTieBreakers>
 </document>

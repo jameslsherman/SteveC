@@ -10,14 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var IsInPain = false
-    var HasCalledDoc = false
-    var HasTakenMeds = false
-
-    @IBOutlet weak var lblInPain: UILabel!
-
-    let URL_SAVE_STEVEC = "http://www.flip3000.com/stevec/save_stevec.php"
-
+    let URL_SAVE_STEVEC = "http://www.flip3000.com/stevec/post_response.php"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,22 +22,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func sendRequest(sender: UIButton) {
-//        let url = NSURL(string: URL_SAVE_STEVEC)!
-//        let reqeustURL = NSMutableURLRequest(URL: url as URL)
+    //*** Pain ***
+    @IBAction func btnPainNo(_ sender: UIButton) {
+        var IsInPain = false
     }
-    
-    @IBAction func btnIsInPain(_ sender: UIButton) {
-//        lblInPain.text = "T"
-        IsInPain = true
+    @IBAction func btnPainYes(_ sender: UIButton) {
+        var IsInPain = true
     }
-    
-    @IBAction func btnHasCalledDoc(_ sender: UIButton) {
-        HasCalledDoc = true
+
+    //*** Doctor ***
+    @IBAction func btnDoctorNo(_ sender: UIButton) {
+        var HasCalledDoc = false
     }
-    
-    @IBAction func btnHasTakenMeds(_ sender: UIButton) {
-        HasTakenMeds = true
+    @IBAction func btnDoctorYes(_ sender: UIButton) {
+        var HasCalledDoc = true
+    }
+
+    //*** Meds ***
+    @IBAction func btnMedsNo(_ sender: UIButton) {
+        var HasTakenMeds = false
+    }
+    @IBAction func btnMedsYes(_ sender: UIButton) {
+        var HasTakenMeds = true
     }
     
 }
