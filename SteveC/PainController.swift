@@ -27,13 +27,12 @@ class PainController: UIViewController {
     }
 
     //*** Segue ***
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let isInPain = self.isInPain
-//        if let docController = segue.destination as? DocController {
-//            docController.isInPain = isInPain
-//        }
-//        
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let targetVC = segue.destination as? DocController {
+            targetVC.isInPain = self.isInPain
+        }
+        
+    }
     
 }
 

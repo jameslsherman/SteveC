@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isInPain: Bool?
+    var hasCalledDoc: Bool?
+    var hasTakenMeds: Bool?
+
     let URL_SAVE_STEVEC = "http://www.flip3000.com/stevec/post_response.php"
     
     override func viewDidLoad() {

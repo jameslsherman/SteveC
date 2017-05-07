@@ -28,5 +28,14 @@ class DocController: UIViewController {
         hasCalledDoc = true;
     }
     
+    //*** Segue ***
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let targetVC = segue.destination as? MedsController {
+            targetVC.isInPain = self.isInPain
+            targetVC.hasCalledDoc = self.hasCalledDoc
+        }
+        
+    }
+    
 }
 

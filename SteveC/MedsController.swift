@@ -10,6 +10,9 @@ import UIKit
 
 class MedsController: UIViewController {
     
+    var isInPain: Bool?
+    var hasCalledDoc: Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +27,16 @@ class MedsController: UIViewController {
     var hasTakenMeds = false;
     @IBAction func btnMedsYes(_ sender: UIButton) {
         hasTakenMeds = true;
+    }
+    
+    //*** Segue ***
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let targetVC = segue.destination as? ViewController {
+            targetVC.isInPain = self.isInPain
+            targetVC.hasCalledDoc = self.hasCalledDoc
+            targetVC.hasTakenMeds = self.hasTakenMeds
+        }
+        
     }
     
 }

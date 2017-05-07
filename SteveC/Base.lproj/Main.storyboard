@@ -158,8 +158,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnMedsYes2:" destination="AJq-1v-tBn" eventType="touchUpInside" id="6pN-b6-yz7"/>
-                                    <action selector="btnMedsYes:" destination="AJq-1v-tBn" eventType="touchUpInside" id="qFh-v7-PpB"/>
+                                    <action selector="btnMedsYes:" destination="AJq-1v-tBn" eventType="touchUpInside" id="awf-Le-bm9"/>
                                     <segue destination="Kzq-5s-ZQ2" kind="show" id="yoE-aa-6MK"/>
                                 </connections>
                             </button>
