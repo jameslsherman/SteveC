@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C37361FA313B83535C417109 /* Pods_SteveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E1801581E571695170C46 /* Pods_SteveC.framework */; };
 		C92CC24E1EBF6527004DED8C /* DocController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC24B1EBF6527004DED8C /* DocController.swift */; };
 		C92CC24F1EBF6527004DED8C /* MedsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC24C1EBF6527004DED8C /* MedsController.swift */; };
 		C92CC2501EBF6527004DED8C /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC24D1EBF6527004DED8C /* PainController.swift */; };
+		C92CC2521EBF9773004DED8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC2511EBF9773004DED8C /* Constants.swift */; };
+		C92CC2541EBFAF31004DED8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C92CC2531EBFAF31004DED8C /* GoogleService-Info.plist */; };
 		C9CF0A5B1EBD634A000A66FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */; };
 		C9CF0A5D1EBD634A000A66FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5C1EBD634A000A66FC /* ViewController.swift */; };
 		C9CF0A601EBD634A000A66FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CF0A5E1EBD634A000A66FC /* Main.storyboard */; };
@@ -18,9 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AE5FD7858D796DA3ED8F377 /* Pods-SteveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteveC/Pods-SteveC.debug.xcconfig"; sourceTree = "<group>"; };
+		1D6E1801581E571695170C46 /* Pods_SteveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92CC24B1EBF6527004DED8C /* DocController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocController.swift; sourceTree = "<group>"; };
 		C92CC24C1EBF6527004DED8C /* MedsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsController.swift; sourceTree = "<group>"; };
 		C92CC24D1EBF6527004DED8C /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainController.swift; sourceTree = "<group>"; };
+		C92CC2511EBF9773004DED8C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C92CC2531EBFAF31004DED8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9CF0A571EBD6349000A66FC /* SteveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CF0A5C1EBD634A000A66FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 		C9CF0A611EBD634B000A66FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9CF0A641EBD634B000A66FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9CF0A661EBD634B000A66FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D147C4457603118F41A97E8D /* Pods-SteveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteveC/Pods-SteveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37361FA313B83535C417109 /* Pods_SteveC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78ACBC47ECB57A8C69A4B6EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E1801581E571695170C46 /* Pods_SteveC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6B07ABD350EE7C177BF2DF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FD7858D796DA3ED8F377 /* Pods-SteveC.debug.xcconfig */,
+				D147C4457603118F41A97E8D /* Pods-SteveC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9CF0A4E1EBD6349000A66FC = {
 			isa = PBXGroup;
 			children = (
 				C9CF0A591EBD6349000A66FC /* SteveC */,
 				C9CF0A581EBD6349000A66FC /* Products */,
+				B6B07ABD350EE7C177BF2DF8 /* Pods */,
+				78ACBC47ECB57A8C69A4B6EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +95,10 @@
 				C92CC24C1EBF6527004DED8C /* MedsController.swift */,
 				C9CF0A5C1EBD634A000A66FC /* ViewController.swift */,
 				C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */,
+				C92CC2511EBF9773004DED8C /* Constants.swift */,
 				C9CF0A611EBD634B000A66FC /* Assets.xcassets */,
 				C9CF0A661EBD634B000A66FC /* Info.plist */,
+				C92CC2531EBFAF31004DED8C /* GoogleService-Info.plist */,
 			);
 			path = SteveC;
 			sourceTree = "<group>";
@@ -80,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9CF0A691EBD634B000A66FC /* Build configuration list for PBXNativeTarget "SteveC" */;
 			buildPhases = (
+				5EFBE115200F544B766D0691 /* [CP] Check Pods Manifest.lock */,
 				C9CF0A531EBD6349000A66FC /* Sources */,
 				C9CF0A541EBD6349000A66FC /* Frameworks */,
 				C9CF0A551EBD6349000A66FC /* Resources */,
+				0B494986D38ECEA6D36261EB /* [CP] Embed Pods Frameworks */,
+				6093F0B2EED5AA58022F9382 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +167,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CF0A651EBD634B000A66FC /* LaunchScreen.storyboard in Resources */,
+				C92CC2541EBFAF31004DED8C /* GoogleService-Info.plist in Resources */,
 				C9CF0A621EBD634B000A66FC /* Assets.xcassets in Resources */,
 				C9CF0A601EBD634A000A66FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B494986D38ECEA6D36261EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteveC/Pods-SteveC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFBE115200F544B766D0691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6093F0B2EED5AA58022F9382 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteveC/Pods-SteveC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9CF0A531EBD6349000A66FC /* Sources */ = {
@@ -151,6 +233,7 @@
 				C9CF0A5D1EBD634A000A66FC /* ViewController.swift in Sources */,
 				C9CF0A5B1EBD634A000A66FC /* AppDelegate.swift in Sources */,
 				C92CC24E1EBF6527004DED8C /* DocController.swift in Sources */,
+				C92CC2521EBF9773004DED8C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +354,7 @@
 		};
 		C9CF0A6A1EBD634B000A66FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE5FD7858D796DA3ED8F377 /* Pods-SteveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83M9D9BLR9;
@@ -285,6 +369,7 @@
 		};
 		C9CF0A6B1EBD634B000A66FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D147C4457603118F41A97E8D /* Pods-SteveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83M9D9BLR9;

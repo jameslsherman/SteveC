@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     var hasCalledDoc: Bool?
     var hasTakenMeds: Bool?
 
-    let URL_SAVE_STEVEC = "http://www.flip3000.com/stevec/post_response.php"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
