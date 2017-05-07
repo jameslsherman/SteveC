@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
+    var ref: FIRDatabaseReference!
+
     var isInPain: Bool?
     var hasCalledDoc: Bool?
     var hasTakenMeds: Bool?
@@ -17,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        self.ref = FIRDatabase.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
