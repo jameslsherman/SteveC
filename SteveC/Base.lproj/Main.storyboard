@@ -12,7 +12,7 @@
         <!--vcPain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="vcPain" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcPain" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="PainController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -70,7 +70,7 @@
         <!--vcDoctor-->
         <scene sceneID="ExY-q1-boz">
             <objects>
-                <viewController title="vcDoctor" modalTransitionStyle="crossDissolve" id="afH-Px-nRe" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcDoctor" modalTransitionStyle="crossDissolve" id="afH-Px-nRe" customClass="DocController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFd-LR-Bhw"/>
                         <viewControllerLayoutGuide type="bottom" id="1Wa-5o-TeO"/>
@@ -128,7 +128,7 @@
         <!--vcMeds-->
         <scene sceneID="OGh-3t-a9e">
             <objects>
-                <viewController title="vcMeds" modalTransitionStyle="crossDissolve" id="AJq-1v-tBn" customClass="ViewController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vcMeds" modalTransitionStyle="crossDissolve" id="AJq-1v-tBn" customClass="MedsController" customModule="SteveC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="evZ-gX-YYJ"/>
                         <viewControllerLayoutGuide type="bottom" id="nUt-hd-Oaj"/>
