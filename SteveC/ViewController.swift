@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var hasCalledDoc: Bool?
     var hasTakenMeds: Bool?
 
+//    let sendAnswers = [isInPain, hasCalledDoc, hasTakenMeds]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
