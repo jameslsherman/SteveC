@@ -33,7 +33,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSubmit(_ sender: UIButton) {
-        self.ref.child("users").setValue(["isInPain": isInPain])
+        //uid: ole4bYxGUAgxLap26R0i6lkbTIP2
+        //self.ref.child("users").child(user.uid).setValue(["username": username])
+        var timestamp = NSDate().timeIntervalSince1970
+        let post = ["isInPain": isInPain!,
+                    "hasCalledDoc": hasCalledDoc!,
+                    "hasTakenMeds": hasTakenMeds!,
+                    "timestamp": timestamp] as [String : Any]
+        self.ref.child("u").setValue(["answers": post])
     }
 }
 
