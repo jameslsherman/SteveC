@@ -223,12 +223,12 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYZ-Of-p8E">
-                                <rect key="frame" x="150" y="458" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYZ-Of-p8E" userLabel="btnSubmit">
+                                <rect key="frame" x="164" y="465" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="submit:" destination="Kzq-5s-ZQ2" eventType="touchUpInside" id="PpT-Fl-26n"/>
+                                    <action selector="btnSubmit:" destination="Kzq-5s-ZQ2" eventType="touchUpInside" id="tnn-lJ-9g1"/>
                                 </connections>
                             </button>
                         </subviews>

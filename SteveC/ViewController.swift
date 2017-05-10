@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        self.ref = FIRDatabase.database().reference()
+        self.ref = FIRDatabase.database().reference(withPath: "test")
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,5 +32,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnSubmit(_ sender: UIButton) {
+        self.ref.child("users").setValue(["isInPain": isInPain])
+    }
 }
 
