@@ -13,6 +13,9 @@
 		C92CC2501EBF6527004DED8C /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC24D1EBF6527004DED8C /* PainController.swift */; };
 		C92CC2521EBF9773004DED8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CC2511EBF9773004DED8C /* Constants.swift */; };
 		C92CC2541EBFAF31004DED8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C92CC2531EBFAF31004DED8C /* GoogleService-Info.plist */; };
+		C9CD49E01EC3D07600DE0DAF /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49DF1EC3D07600DE0DAF /* EmailController.swift */; };
+		C9CD49E31EC3D45D00DE0DAF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49E21EC3D45D00DE0DAF /* MainViewController.swift */; };
+		C9CD49E71EC3FBF900DE0DAF /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49E61EC3FBF900DE0DAF /* UIViewController+Alerts.m */; };
 		C9CF0A5B1EBD634A000A66FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */; };
 		C9CF0A5D1EBD634A000A66FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5C1EBD634A000A66FC /* ViewController.swift */; };
 		C9CF0A601EBD634A000A66FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CF0A5E1EBD634A000A66FC /* Main.storyboard */; };
@@ -28,6 +31,11 @@
 		C92CC24D1EBF6527004DED8C /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainController.swift; sourceTree = "<group>"; };
 		C92CC2511EBF9773004DED8C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C92CC2531EBFAF31004DED8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9CD49DF1EC3D07600DE0DAF /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
+		C9CD49E21EC3D45D00DE0DAF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C9CD49E41EC3FBE300DE0DAF /* SteveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SteveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9CD49E51EC3FBF900DE0DAF /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
+		C9CD49E61EC3FBF900DE0DAF /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
 		C9CF0A571EBD6349000A66FC /* SteveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CF0A5C1EBD634A000A66FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +75,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C9CD49E11EC3D11700DE0DAF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD49E51EC3FBF900DE0DAF /* UIViewController+Alerts.h */,
+				C9CD49E61EC3FBF900DE0DAF /* UIViewController+Alerts.m */,
+				C9CD49DF1EC3D07600DE0DAF /* EmailController.swift */,
+				C9CD49E21EC3D45D00DE0DAF /* MainViewController.swift */,
+				C9CD49E41EC3FBE300DE0DAF /* SteveC-Bridging-Header.h */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
 		C9CF0A4E1EBD6349000A66FC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +108,7 @@
 		C9CF0A591EBD6349000A66FC /* SteveC */ = {
 			isa = PBXGroup;
 			children = (
+				C9CD49E11EC3D11700DE0DAF /* Auth */,
 				C9CF0A631EBD634B000A66FC /* LaunchScreen.storyboard */,
 				C9CF0A5E1EBD634A000A66FC /* Main.storyboard */,
 				C92CC24D1EBF6527004DED8C /* PainController.swift */,
@@ -139,6 +160,7 @@
 					C9CF0A561EBD6349000A66FC = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 83M9D9BLR9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -230,10 +252,13 @@
 			files = (
 				C92CC24F1EBF6527004DED8C /* MedsController.swift in Sources */,
 				C92CC2501EBF6527004DED8C /* PainController.swift in Sources */,
+				C9CD49E01EC3D07600DE0DAF /* EmailController.swift in Sources */,
 				C9CF0A5D1EBD634A000A66FC /* ViewController.swift in Sources */,
 				C9CF0A5B1EBD634A000A66FC /* AppDelegate.swift in Sources */,
 				C92CC24E1EBF6527004DED8C /* DocController.swift in Sources */,
+				C9CD49E71EC3FBF900DE0DAF /* UIViewController+Alerts.m in Sources */,
 				C92CC2521EBF9773004DED8C /* Constants.swift in Sources */,
+				C9CD49E31EC3D45D00DE0DAF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +382,15 @@
 			baseConfigurationReference = 0AE5FD7858D796DA3ED8F377 /* Pods-SteveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 83M9D9BLR9;
 				INFOPLIST_FILE = SteveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinetex.SteveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SteveC/SteveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -372,12 +400,14 @@
 			baseConfigurationReference = D147C4457603118F41A97E8D /* Pods-SteveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 83M9D9BLR9;
 				INFOPLIST_FILE = SteveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinetex.SteveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SteveC/SteveC-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
