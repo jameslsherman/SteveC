@@ -16,6 +16,8 @@
 		C9CD49E01EC3D07600DE0DAF /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49DF1EC3D07600DE0DAF /* EmailController.swift */; };
 		C9CD49E31EC3D45D00DE0DAF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49E21EC3D45D00DE0DAF /* MainViewController.swift */; };
 		C9CD49E71EC3FBF900DE0DAF /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49E61EC3FBF900DE0DAF /* UIViewController+Alerts.m */; };
+		C9CD49E91EC8A1D500DE0DAF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CD49E81EC8A1D500DE0DAF /* Login.storyboard */; };
+		C9CD49EB1EC8CB9600DE0DAF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD49EA1EC8CB9500DE0DAF /* LoginController.swift */; };
 		C9CF0A5B1EBD634A000A66FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */; };
 		C9CF0A5D1EBD634A000A66FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF0A5C1EBD634A000A66FC /* ViewController.swift */; };
 		C9CF0A601EBD634A000A66FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CF0A5E1EBD634A000A66FC /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		C9CD49E41EC3FBE300DE0DAF /* SteveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SteveC-Bridging-Header.h"; sourceTree = "<group>"; };
 		C9CD49E51EC3FBF900DE0DAF /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
 		C9CD49E61EC3FBF900DE0DAF /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
+		C9CD49E81EC8A1D500DE0DAF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C9CD49EA1EC8CB9500DE0DAF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		C9CF0A571EBD6349000A66FC /* SteveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF0A5A1EBD634A000A66FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CF0A5C1EBD634A000A66FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			children = (
 				C9CD49E11EC3D11700DE0DAF /* Auth */,
 				C9CF0A631EBD634B000A66FC /* LaunchScreen.storyboard */,
+				C9CD49E81EC8A1D500DE0DAF /* Login.storyboard */,
+				C9CD49EA1EC8CB9500DE0DAF /* LoginController.swift */,
 				C9CF0A5E1EBD634A000A66FC /* Main.storyboard */,
 				C92CC24D1EBF6527004DED8C /* PainController.swift */,
 				C92CC24B1EBF6527004DED8C /* DocController.swift */,
@@ -191,6 +197,7 @@
 				C9CF0A651EBD634B000A66FC /* LaunchScreen.storyboard in Resources */,
 				C92CC2541EBFAF31004DED8C /* GoogleService-Info.plist in Resources */,
 				C9CF0A621EBD634B000A66FC /* Assets.xcassets in Resources */,
+				C9CD49E91EC8A1D500DE0DAF /* Login.storyboard in Resources */,
 				C9CF0A601EBD634A000A66FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +266,7 @@
 				C9CD49E71EC3FBF900DE0DAF /* UIViewController+Alerts.m in Sources */,
 				C92CC2521EBF9773004DED8C /* Constants.swift in Sources */,
 				C9CD49E31EC3D45D00DE0DAF /* MainViewController.swift in Sources */,
+				C9CD49EB1EC8CB9600DE0DAF /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

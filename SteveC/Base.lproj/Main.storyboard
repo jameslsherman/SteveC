@@ -62,10 +62,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YmT-t9-3zM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
         </scene>
         <!--vcDoctor-->
         <scene sceneID="ExY-q1-boz">
@@ -123,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJN-Ku-DWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="37"/>
+            <point key="canvasLocation" x="1660" y="36.431784107946029"/>
         </scene>
         <!--vcMeds-->
         <scene sceneID="OGh-3t-a9e">
@@ -181,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdz-1p-jSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="37"/>
+            <point key="canvasLocation" x="2407.1999999999998" y="36.431784107946029"/>
         </scene>
         <!--vcSendRequest-->
         <scene sceneID="Wf3-3s-eZX">
@@ -237,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCI-9e-WI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.8000000000002" y="35.532233883058474"/>
+            <point key="canvasLocation" x="3124" y="35.532233883058474"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
